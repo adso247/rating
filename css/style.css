@@ -1,0 +1,28 @@
+/* Establece el color de fondo del cuerpo del documento */
+body {
+    background-color: rgb(45, 122, 45);
+}
+
+/* Ajusta el margen superior y centra los elementos de calificación horizontalmente */
+.rating {
+    margin-top: 100px; /* Margen superior de 100px para separar del contenido superior */
+    display: flex; /* Usa el modelo de caja flexible */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+}
+
+/* Define el estilo de cada elemento individual de calificación */
+.item {
+    background-color: rgb(198, 198, 198); /* Color de fondo gris claro */
+    /* Aplica una máscara a la imagen utilizando propiedades específicas para navegadores WebKit */
+    -webkit-mask-image: url(../img/star.svg);
+    /* Aplica una máscara a la imagen utilizando la propiedad mask-image */
+    mask-image: url(../img/star.svg);
+    width: 50px; /* Ancho de 50px */
+    height: 50px; /* Altura de 50px */
+    cursor: pointer; /* Cambia el cursor al puntero para indicar interactividad */
+}
+
+/* Define el estilo de un elemento de calificación lleno */
+.item-full {
+    background-color: rgb(255, 237, 35); /* Cambia el color de fondo a un tono de amarillo */
+}
