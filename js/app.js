@@ -6,7 +6,7 @@ let currentValue = 0;
 // Variable que va a determinar la cantidad máxima de estrellas
 const limit = 10;
 
-// Creamos un array de elementos div usando el método map en una matriz generada.
+// Creamos un array de elementos div usando el método map para recorrer el array.
 const html = Array.from(Array(limit)).map((item, i) => {
     // Cada div representa un elemento de calificación y tiene clases y atributos únicos.
     return `<div class="item item-${i}" data-pos="${i}"></div>`;
